@@ -21,11 +21,12 @@ body {
 
 .ruokalistacontainer{
   margin: auto;
-  width: 720px;
+  max-width: 720px;
+  width: 100%;
+  scale: 105%;
   background-color: #00000070;
   backdrop-filter: blur(8px);
   box-shadow: 0px 4px 16px #000000;
-  scale: 90%;
 }
 
 .hinta{
@@ -40,7 +41,7 @@ body {
   margin-left: 82px;
   font-weight: bold;
   scale: 120%;
-  text-shadow: 0px 1px 4px #000000;
+  text-shadow: 0px 1px 2px #000000;
 }
 
 #maincontainer{
@@ -55,19 +56,19 @@ body {
   margin-left: 20px;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  text-shadow: 1px 1px 4px #000000;
+  text-shadow: 0px 1px 2px #000000;
 }
 
 .bottomtext{
-  scale: 90%;
   margin: auto;
-  width: 720px;
+  max-width: 500px;
+  width: 85%;
   background-color: #00000070;
   backdrop-filter: blur(8px);
   box-shadow: 0px 4px 16px #000000;
 }
 
-.tiedot{
+  .tiedot{
   margin-left: 20px;
   margin-bottom: 20px;
   text-shadow: 0px 1px 2px #000000;
@@ -88,4 +89,51 @@ body {
   text-shadow: 0px 1px 4px #000000;
   margin-top: 20px;
   padding-top: 20px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, [col-start] 1fr);
+  justify-content: center;
+  align-items: start;
+  margin-top: 40px;
+}
+
+@media (max-width: 1100px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.lomake{
+  margin: 10px;
+  padding-left: 10px;
+}
+
+.send{
+  border-radius: 4px;
+  padding: 10px;
+  border: 0;
+  background-color: #00000070;
+  
+}
+
+.textbox{
+  border-radius: 4px;
+  resize: none;
+  display: block;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 50px;
+}
+
+.lomaketitle{
+  text-shadow: 0px 1px 4px #000000;
+}
+
+.titlecontainer{
+  background-color: #000000a5;
+  padding-bottom: 14px;
+  box-shadow: 0px 6px 20px #000000;
+  backdrop-filter: blur(8px);
 }
