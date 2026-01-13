@@ -49,7 +49,7 @@ body {
 }
 
 #maincontainer{
-  background: url('https://img.freepik.com/free-photo/abstract-blur-coffee-shop-cafe-interior_74190-6342.jpg');
+  background: url(taustakuva.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100% 100%;
